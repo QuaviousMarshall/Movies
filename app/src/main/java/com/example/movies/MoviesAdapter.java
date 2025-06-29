@@ -45,7 +45,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         Glide.with(holder.itemView)
                 .load(movie.getPoster().getUrl())
                 .into(holder.imageViewPoster);
-        holder.textViewRating.setText();
+        holder.textViewRating.setText(movie.getRating().getKp());
     }
 
     static class MovieViewHolder extends RecyclerView.ViewHolder {
