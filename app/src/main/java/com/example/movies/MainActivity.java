@@ -42,5 +42,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         vIewModel.loadMovies();
+        moviesAdapter.setOnReachEndListener(new MoviesAdapter.OnReachEndListener() {
+            @Override
+            public void onReachEnd() {
+                vIewModel.loadMovies();
+            }
+        });
     }
 }
