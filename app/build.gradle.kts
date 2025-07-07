@@ -35,6 +35,8 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.gson)
+    implementation(libs.okHttpClient)
+    implementation(libs.httpLoggingInterceptor)
     implementation(libs.adapterRxjava3)
     implementation(libs.rxandroid)
     implementation(libs.rxjava)
